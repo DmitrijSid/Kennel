@@ -14,6 +14,7 @@
     $(document).ready(function(){
     $("#submitBtn").click(function(){        
         $("#myForm").submit(); // Submit the form
+        alert("Hi");
     });
 });
 </script>
@@ -43,55 +44,66 @@
 
 
     <div data-role="main" class="ui-content">
-       <div id="contact_form">
-<form name="contact" action="">
-  <fieldset>
-    <div class="input-box">
-    <label for="name" id="name_label">Full Name</label>
-    <input type="text" name="name" id="name" placeholder="Enter first Name and surname" class="text-input" required/>
-    </div>
-     
-    <div class="input-box">
-    <label for="address" id="address_label">Address</label>
-    <input type="text" name="address" id="address" placeholder="Enter address" class="text-input"/>
-    </div>
-     
-    <div class="input-box">
-    <label for="phone" id="phone_label">Phone</label>
-    <input type="text" name="phone" id="phone" class="text-input" placeholder="Phone Number"/>
-    </div>
-      
-    <div class="input-box">
-    <label>Pet Name</label>
-    <input type="text" name="petName" id="petName" class="text-input" placeholder="Name of Pet"/>
-    </div>
-     
-    <div class="input-box">
-    <label>Pet Type</label>
-    <input type="text" name="petName" id="petType" class="text-input" placeholder="Type of Pet"/>
-    </div>
-      
-    <div class="input-box">
-    <label for="duration" id="duration_label">Number of days</label>
-    <input type="text" name="duration" id="duration" class="text-input" placeholder="Duration"/>
-    </div>
-     
-    <div class="input-box">
-    <label>Special Requirements</label>
-    <textarea name ="textarea" id="description"></textarea>
-    </div>
-     
-    <input type="submit" name="submit" class="button" id="submit_btn" value="Book With Us" />
-  </fieldset>
-</form>
-</div>
-    </div>
+        <div class="ui-grid-b">
+            <div id="contact_form" class="ui-block-a">
+                <h1>Some Space</h1>
+            </div>
 
+            <div class="ui-block-b">
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter first Name and surname" class="text-input" required/>
+                </div>
+
+                <div class="input-box">
+                    <label>Address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter address" class="text-input"/>
+                </div>
+
+                <div class="input-box">
+                    <label>Phone</label>
+                    <input type="text" name="phone" id="phone" class="text-input" placeholder="Phone Number"/>
+                </div>
+                <label for="radio-cat">Cat</label>
+                <input type="checkbox" name="radio-choice-cat" id="radio-cat" value="cat">
+                <input type="checkbox" name="radio-choice-dog" id="radio-dog" value="dog">
+                <label for="radio-dog">Dog</label>
+
+        <label for="numDays" style="text-align: center">Number of Days</label>
+        <select number="numDays" id="numDays">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+        </select>
+        <label for="petName">Pet Name</label>
+        <textarea name="petName" id="petName" placeholder="Your pet Name"></textarea>
+        <label for="addInfo">All we need to know about your pet please add here</label>
+        <textarea name="additionalInfo" id="addInfo" placeholder="Add some additional info"></textarea>
+        <input type="submit" name="submitForm" id="submitBtn" value="Submit">
+        </form>
+
+    </div>
+    <div class="ui-block-c">
+        <h1>Some Space</h1>
+    </div>
+        </div>
+
+</div>
     <div data-role="footer" data-position="fixed">
         <h2>&copy; Group Project* 2021</h2>
     </div>
 </div>
-
 
 </body>
 </html>

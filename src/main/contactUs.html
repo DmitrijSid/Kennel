@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-    <link rel="stylesheet" href="themes/HotelTheme.css"></link>
-    ,<link rel="stylesheet" href="themes/HotelTheme.min.css"></link>
+    <link rel="stylesheet" href="themes/HotelTheme.css">
+    </link>
+
+    <link rel="stylesheet" href="themes/HotelTheme.min.css">
+    </link>
     <meta charset="UTF-8">
     <title>Pet Hotel</title>
 </head>
-<body >
-<div data-role="page" id="contactUs" data-theme="a">
+
+<body>
+<div data-role="page" id="contactUs" data-url="contactUs" data-theme="a">
+
+    <div data-role="panel" id="myPanel" data-position="right">
+        <h2>Welcome to Live Chat</h2>
+
+        <div class="input-box">
+            <label>Your Name</label>
+            <input type="text" name="text" id="YourName" placeholder="" class="text-input" required />
+        </div>
+
+        <div class="input-box">
+            <label>Message</label>
+            <textarea name="textarea" id="chatMsg"></textarea>
+        </div>
+
+        <input type="submit" name="submit" class="button" id="subBtn" value="Chat" />
+
+        <a href="tryit.asp-filename=tryjqmob_panels_rightpos.html#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Chat</a>
+    </div>
 
     <!--Header-->
     <div data-role="header">
@@ -34,37 +57,70 @@
 
 
     <div data-role="main" class="ui-content">
-        <h1>Contact Pet Hotel</h1>
-        <h3>Telephone: 085-1234567</h3>
-        <h3>Email: pethotel@gmail.com</h3>
-        <form>
-            <div class="input-box">
+        <div class="ui-grid-b">
+            <div class="ui-block-a"></div>
+            <!--Some empty Info Block-->
+            <div class="ui-block-b">
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a">
+                <h1>Contact Pet Hotel</h1>
+                <h3>Telephone: 085-1234567</h3>
+                <h3>Email: pethotel@gmail.com</h3>
+                    <div class="input-box">
 
-            <div class="input-box">
-                 <label for="lastName" id="name_label">Last Name</label>
-                   <input type="text" name="text" id="lastName" placeholder="" class="text-input" required/>
+                        <div class="input-box">
+                            <label>First Name</label>
+                            <input type="text" name="text" id="firstName" placeholder="" class="text-input" required />
+                        </div>
+
+                        <div class="input-box">
+                            <label>Last Name</label>
+                            <input type="text" name="text" id="lastName" placeholder="" class="text-input" required />
+                        </div>
+
+                        <div class="input-box">
+                            <label>Email</label>
+                            <input type="email" name="email" id="email" placeholder="" class="text-input" required />
+                        </div>
+
+                        <div class="input-box">
+                            <label>Message</label>
+                            <textarea name="textarea" id="message"></textarea>
+                        </div>
+
+                        <input type="submit" name="submit" class="button" id="submit_btn" value="Submit Question" />
             </div>
-            
-            <div class="input-box">
-                 <label for="email" id="name_label">Email</label>
-                   <input type="email" name="email" id="email" placeholder="" class="text-input" required/>
-            </div>
-            
-            <div class="input-box">
-                 <label for="message" id="message">Message</label>
-                 <textarea name ="textarea" id="message"></textarea>
-            </div>
-            
-            <input type="submit" name="submit" class="button" id="submit_btn" value="Submit Question" />
-	</form>
-        
     </div>
+    <div class="ui-block-b">
+        <!--Map Display-->
+        <div role="main" class="ui-content" id="map-canvas">
+            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Dublin%20Rd,%20Kilmacuagh%20(Cooke),%20Athlone,%20Co,%20Westmeath.+(Pet%20Hotel)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm">Google Route Planner</a></div>
+        </div>
+    </div>
+    </fieldset>
 
-    <div data-role="footer" data-position="fixed">
-        <h2>&copy; Group Project* 2021</h2>
+
+            <div class="ui-grid-solo">
+
+                    <div data-role="main" class="ui-block-a">
+                        <h2>Live Chat</h2>
+                        <a href="tryit.asp-filename=tryjqmob_panels_rightpos.html#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Live Chat</a>
+                        <!--<a href="tryit.asp-filename=tryjqmob_panels_rightpos.html#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Live Chat</a>-->
+                    </div>
+            </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>&copy; Group Project* 2021</h2>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="ui-block-c">
+            <!--Some empty Info Block-->
+        </div>
     </div>
 </div>
 
 
 </body>
+
 </html>

@@ -79,6 +79,7 @@
     <div data-role="main" class="ui-content">
         <!--Main Content First Grid with three blocks for content-->
         <div class="ui-grid-b">
+
             <div class="ui-block-a">
                 <h2>My First Block</h2>
                 <p>
@@ -91,6 +92,46 @@
                 </p>
             </div>
             <div class="ui-block-b">
+                <form>
+                <h2>Your Personal Details</h2>
+                <div class="ui-grid-a">
+
+                    <div class="ui-block-a">
+                        <label for="radio-cat">Cat</label>
+                        <input type="checkbox" name="radio-choice-cat" id="radio-cat" value="cat">
+                    </div>
+                    <div class="ui-block-b">
+                        <input type="checkbox" name="radio-choice-dog" id="radio-dog" value="dog">
+                        <label for="radio-dog">Dog</label>
+                    </div>
+                </div>
+                <label for="numDays" style="text-align: center">Number of Days</label>
+                <select number="numDays" id="numDays">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                </select>
+                <label for="petName">Pet Name</label>
+                <textarea name="petName" id="petName" placeholder="Your pet Name"></textarea>
+                <label for="addInfo">All we need to know about your pet please add here</label>
+                <textarea name="additionalInfo" id="addInfo" placeholder="Add some additional info"></textarea>
+                <input type="submit" name="submitForm" id="submitBtn" value="Submit">
+            </form>
+
+            </div>
+            <!--Application Form for Current Users to make an booking-->
+            <div class="ui-block-c">
                 <h2>My Second Block of content</h2>
                 <p>
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
@@ -100,45 +141,6 @@
                     It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
                     The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
                 </p>
-            </div>
-            <!--Application Form for Current Users to make an booking-->
-            <div class="ui-block-c">
-                <form>
-                    <h2>Application Form</h2>
-                    <div class="ui-grid-a">
-
-                        <div class="ui-block-a">
-                            <label for="radio-cat">Cat</label>
-                            <input type="checkbox" name="radio-choice-cat" id="radio-cat" value="cat">
-                        </div>
-                        <div class="ui-block-b">
-                            <input type="checkbox" name="radio-choice-dog" id="radio-dog" value="dog">
-                            <label for="radio-dog">Dog</label>
-                        </div>
-                    </div>
-                    <label for="numDays" style="text-align: center">Number of Days</label>
-                    <select number="numDays" id="numDays">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                    </select>
-                    <label for="petName">Pet Name</label>
-                    <textarea name="petName" id="petName" placeholder="Your pet Name"></textarea>
-                    <label for="addInfo">All we need to know about your pet please add here</label>
-                    <textarea name="additionalInfo" id="addInfo" placeholder="Add some additional info"></textarea>
-                    <input type="submit" name="submitForm" id="submitBtn" value="Submit">
-                </form>
             </div>
             <!--/Application Form for Current Users to make an booking-->
             <!--Next Block of three divs with video content of pets-->
