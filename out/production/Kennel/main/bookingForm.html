@@ -13,8 +13,7 @@
 <script>
     $(document).ready(function(){
     $("#submitBtn").click(function(){        
-        $("#myForm").submit(); // Submit the form
-        alert("Hi");
+        alert("Registration Complete")
     });
 });
 </script>
@@ -43,25 +42,29 @@
     </div>
 
 
-    <div data-role="main" class="ui-content">
+    <div data-role="main" class="ui-content" style="text-align: center">
         <div class="ui-grid-b">
+            <!--Left BANNER-->
             <div id="contact_form" class="ui-block-a">
-                <h1>Some Space</h1>
+                <h3 style="text-align: center">Fast Delivery</h3>
+                <img class="headerImg" src="themes/images/kitten.jpg" style="max-height: 300px; max-width: 400px;">
+                <h3 style="text-align: center">Wide Range</h3>
+                <img class="headerImg" src="themes/images/kitten.jpg" style="max-height: 300px; max-width: 400px;">
             </div>
 
             <div class="ui-block-b">
                 <div class="input-box">
-                    <label>Full Name</label>
+                    <b>Full Name</b>
                     <input type="text" name="name" id="name" placeholder="Enter first Name and surname" class="text-input" required/>
                 </div>
 
                 <div class="input-box">
-                    <label>Address</label>
+                    <b>Address</b>
                     <input type="text" name="address" id="address" placeholder="Enter address" class="text-input"/>
                 </div>
 
                 <div class="input-box">
-                    <label>Phone</label>
+                    <b>Phone</b>
                     <input type="text" name="phone" id="phone" class="text-input" placeholder="Phone Number"/>
                 </div>
                 <label for="radio-cat">Cat</label>
@@ -69,7 +72,7 @@
                 <input type="checkbox" name="radio-choice-dog" id="radio-dog" value="dog">
                 <label for="radio-dog">Dog</label>
 
-        <label for="numDays" style="text-align: center">Number of Days</label>
+        <b>Number of Days</b>
         <select number="numDays" id="numDays">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -86,16 +89,19 @@
             <option value="13">13</option>
             <option value="14">14</option>
         </select>
-        <label for="petName">Pet Name</label>
+        <b>Pet Name</b>
         <textarea name="petName" id="petName" placeholder="Your pet Name"></textarea>
-        <label for="addInfo">All we need to know about your pet please add here</label>
+        <b>All we need to know about your pet please add here...</b>
         <textarea name="additionalInfo" id="addInfo" placeholder="Add some additional info"></textarea>
         <input type="submit" name="submitForm" id="submitBtn" value="Submit">
         </form>
 
     </div>
     <div class="ui-block-c">
-        <h1>Some Space</h1>
+        <h3 style="text-align: center">For Every Pet</h3>
+        <img class="headerImg" src="themes/images/kitten.jpg" style="max-height: 300px; max-width: 400px;">
+        <h3 style="text-align: center">For all your needs</h3>
+        <img class="headerImg" src="themes/images/kitten.jpg" style="max-height: 300px; max-width: 400px;">
     </div>
         </div>
 

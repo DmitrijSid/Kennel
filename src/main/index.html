@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="themes/HotelTheme.min.css"></link>
     <meta charset="UTF-8">
     <title>Pet Hotel</title>
-
+<style>
+    .testCss{
+        padding-left: 30px;
+    }
+</style>
 </head>
 <body>
 <div data-role="page" id="mainPage" data-theme="a">
@@ -18,8 +22,8 @@
 
         <div data-role="header" data-position="fixed">
             <h1>Main Page</h1>
-            <a href="login" data-theme="b" data-icon="home" data-mini="true" data-position="fixed">Login</a>
-            <a href="register" data-theme="b" data-icon="home" data-mini="true" data-position="fixed">Register</a>
+            <a href="" data-theme="b" data-icon="home" data-mini="true" data-position="fixed">Login</a>
+            <a href="bookingForm.html" data-theme="b" data-icon="home" data-mini="true" data-position="fixed">Register</a>
         </div>
 
         <!--TODO need to sorted margin or padding between the topics in the Header-->
@@ -92,8 +96,8 @@
                     The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
                 </p>
             </div>
-            <div class="ui-block-b">
-                <h1 style="text-align: center">Personal Details</h1>
+            <div class="ui-block-b testCss">
+                <h1 class="testCss">Personal Details</h1>
                 <b>Name: </b><span id="nameOutput"></span>
                 </br>
                 <b>Surname: </b><span id="surnameOutput"></span>
